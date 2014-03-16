@@ -32,3 +32,11 @@ UDKGame/Content/Shared
 *.ucproj
 *.suo
 
+
+UDKGame/Content/GameAssetDatabase.checkpoint
+UDKGame/Content/GlobalShaderCache-PC-D3D-SM3.bin
+UDKGame/Content/GlobalShaderCache-PC-D3D-SM5.bin
+UDKGame/Content/GlobalShaderCache-PC-OpenGL.bin
+UDKGame/Content/RefShaderCache-PC-D3D-SM3.upk
+UDKGame/Content/RefShaderCache-PC-OpenGL.upk
+UDKGame/Content/RefShaderCache-PC-D3D-SM5.upk
