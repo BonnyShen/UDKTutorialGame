@@ -40,3 +40,9 @@ UDKGame/Content/GlobalShaderCache-PC-OpenGL.bin
 UDKGame/Content/RefShaderCache-PC-D3D-SM3.upk
 UDKGame/Content/RefShaderCache-PC-OpenGL.upk
 UDKGame/Content/RefShaderCache-PC-D3D-SM5.upk
+*.user
+UDKGame/Cloud/CloudStorage.ini
+UDKGame/Content/GameAssetDatabase.journal
+UDKGame/Config/UDKEditor.ini
+UDKGame/Config/UDKEditorUserSettings.ini
+UDKGame/Config/UDKEditor.ini

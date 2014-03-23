@@ -1,4 +1,13 @@
+/**
+ * ”Œœ∑¿‡–Õ
+ */
 class TGGameInfo extends GameInfo;
+
+//game init
+event PostBeginPlay() 
+{
+	super.PostBeginPlay();
+}
 
 DefaultProperties
 {
