@@ -1,7 +1,7 @@
 /**
  * ½ÇÉ«¿ØÖÆ
  */
-class TGPlayerController extends PlayerController;
+class TGPlayerController extends GamePlayerController;
 
 DefaultProperties
 {

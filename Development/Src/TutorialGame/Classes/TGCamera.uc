@@ -22,8 +22,8 @@ function UpdateViewTarget(out TViewTarget OutVT, float DeltaTime)
 	local Rotator Rot;
 	
 	//人物所在的坐标
-	PawnLoc = Pawn(OutVT.Target).Location;
-
+	//PawnLoc = Pawn(OutVT.Target).Location;
+	PawnLoc = TGPlayerController(PCOwner).Pawn.Location;
 	//摄像机的坐标位置
 	Loc.X = PawnLoc.X - distance;
 	Loc.Y = PawnLoc.Y - distance * tan(hor_angle*DegToRad);
@@ -38,7 +38,6 @@ function UpdateViewTarget(out TViewTarget OutVT, float DeltaTime)
 	OutVT.POV.Rotation = Rot;
 
 	OutVT.POV.FOV = 65;
-	`log("== update camera at location "@Loc@" and rotation"@Rot);
 }
 
 DefaultProperties
