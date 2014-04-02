@@ -3,6 +3,23 @@
  */
 class TGPlayerPawn extends GamePawn;
 
+var SkeletalMeshComponent HeadMesh;
+var SkeletalMeshComponent HairMesh;
+
+/**
+ * 初始化动作树
+ * @param SkelComp:角色skeletalmesh组件
+ */
+simulated event PostInitAnimTree(SkeletalMeshComponent SkelComp) {
+	super.PostInitAnimTree(SkelComp);
+
+	HeadMesh.SetShadowParent(Mesh);
+	Mesh.AttachComponentToSocket(HeadMesh, 'HeadPoint');
+	HairMesh.SetShadowParent(Mesh);
+	Mesh.AttachComponentToSocket(HairMesh, 'HairPoint');
+
+}
+
 DefaultProperties
 {
 	Begin Object Name=CollisionCylinder
@@ -21,4 +38,14 @@ DefaultProperties
 	End Object
 	Mesh = MyPawnMesh
 	components.Add(MyPawnMesh)
+
+	begin object class=SkeletalMeshComponent Name=HdMesh
+		SkeletalMesh=SkeletalMesh'Hero.Model.SK_Hero_Male_Face_Base'
+	end object
+	HeadMesh=HdMesh
+
+	begin object class=SkeletalMeshComponent Name=HrMesh
+		SkeletalMesh=SkeletalMesh'Hero.Model.SK_Hero_Male_Hair_01'
+	end object
+	HairMesh=HrMesh
 }
