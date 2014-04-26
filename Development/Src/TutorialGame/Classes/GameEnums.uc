@@ -10,6 +10,14 @@ enum GamePawnState {
 	PS_Attack,//¹¥»÷
 };
 
+//½ÇÉ«¶¯»­×´Ì¬
+enum GamePawnAnimState {
+	PA_Walk,//ÒÆ¶¯×´Ì¬
+	PA_Jump,//ÌøÔ¾
+	PA_Talk,//¶Ô»°
+	PA_Attack,//¹¥»÷
+};
+
 DefaultProperties
 {
 }

@@ -163,6 +163,20 @@ simulated function UpdatePawnRotation() {
 }
 
 
+exec function HelloJ() {
+	`log("J was pressed");
+	TGPlayerPawn(Pawn).ChangeAnim(PA_Jump);
+}
+
+exec function HelloK() {
+	`log("K was pressed --- ");
+	TGPlayerPawn(Pawn).ChangeAnim(PA_Talk);
+}
+
+exec function HelloL(int param) {
+	`log("L was pressed " @param);
+	TGPlayerPawn(Pawn).ChangeAnim(PA_Attack);
+}
 
 DefaultProperties
 {
