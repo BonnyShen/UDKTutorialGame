@@ -72,6 +72,11 @@ simulated event OnAnimEnd(AnimNodeSequence SeqNode, float PlayedTime, float Exce
 }
 
 
+//动画呼叫事件
+event CallScriptViaAnim() {
+	`log("=== 我跳跃到了最高处啦 ===");
+}
+
 DefaultProperties
 {
 	Begin Object Name=CollisionCylinder
